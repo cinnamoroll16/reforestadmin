@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile Page</title>
+
+    <!-- Profile page styling -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Topbar -->
+    <iframe src="topbar.html" style="width: 100%; height: 60px; border: none;"></iframe>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>My Profile</h1>
+        <p class="description">
+            View and update your profile settings. Administrators can also manage groups and permissions for users.
+        </p>
+
+        <form class="profile-form">
+            <!-- Avatar -->
+            <div class="form-group">
+                <label>Avatar</label>
+                <div class="avatar-upload">
+                    <img src="avatar.jpg" alt="Profile Avatar" class="avatar-preview">
+                    <input type="file" accept="image/*">
+                </div>
+            </div>
+
+            <!-- Name -->
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" value="John Doe">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" value="admin@example.com">
+            </div>
+
+            <!-- Language -->
+            <div class="form-group">
+                <label>Language</label>
+                <select>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                </select>
+            </div>
+
+            <!-- Groups -->
+            <div class="form-group">
+                <label>Groups</label>
+                <select multiple>
+                    <option>Administrators</option>
+                    <option>Editors</option>
+                    <option>Viewers</option>
+                </select>
+            </div>
+
+            <!-- Permission -->
+            <div class="form-group">
+                <label>Permission Level</label>
+                <select>
+                    <option>Full Access</option>
+                    <option>Limited Access</option>
+                    <option>Read Only</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Save Changes</button>
+                <button type="reset" class="btn-secondary">Cancel</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
